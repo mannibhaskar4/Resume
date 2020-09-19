@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Manni Bhaskar}{Mallik}{ \urlstyle{same}\href{https://www.linkedin.com/in/manni-bhaskar-mallik-ba54001a3/}{linkedin.com/in/manni-bhaskar-mallik/}\\
+\href{mailto:mannibhaskar4@gmail.com}{mannibhaskar4@gmail.com} | \href{tel:8102087043}{+91 81020-87043}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Java \textbullet{} HTML \textbullet{} CSS \textbullet{} Javascript \\
+\textbullet{} C  \textbullet{} Python \textbullet{} MATLAB
+
+
+\subsection{Frameworks}
+Spring \textbullet{} Spring Boot\\
+
+\subsection{Tools}
+Git \textbullet{} GitHub  \textbullet{} MATLAB Online  \textbullet{} Jupyter Notebook \\ \textbullet{} JupterLab \textbullet{} Apache Tomcat   \textbullet{} JDBC \textbullet{} IntelliJ IDEA \textbullet{} VSCode \\ \textbullet{} Eclipse \textbullet{} Sublime Text
+\sectionsep
+
+\subsection{DBMS}
+Oracle \textbullet{} MySQL 
+\sectionsep
+
+\subsection{Platforms}
+Linux \textbullet{} Windows 
+\sectionsep
+
+\subsection{Soft Skills}
+ Writing \textbullet{} Time Management
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn://  \href{https://www.linkedin.com/in/manni-bhaskar-mallik-ba54001a3/}{\bf manni-bhaskar-mallik} \\
+GitHub://  \href{https://github.com/mannibhaskar4}{\bf mannibhaskar4} \\
+Twitter://  \href{https://twitter.com/MallikManni}{\bf @MallikManni} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BGI - SDET}
+\descript{B. Tech in Computer Science \\ and Engineering}
+\location{June 2021 | West Bengal, India}
+\location{ Cum. GPA: 7.5 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+\sectionsep
+Database Management System \\
+Computer Networks \\
+Operating Systems \\
+Object Oriented Programming \\
+Data Structures \& Algorithms \\
+Design \& Analysis of Algorithms \\
+Digital Electronics \\
+Discrete Mathematics \\
+Computer Organisation \\
+Computer Architecture \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Net-Banking Management System}\\
+\location{Dec 2019 – Jan 2020 | Guided Individual Project}
+\sectionsep
+\begin{tightemize}
+\item Developed to help customer for online banking using \textbf{J2EE}.
+\item \textbf{DAO} and \textbf{DTO} pattern were used for structuring the whole project.
+\item \textbf{JDBC} was used for data connection with  \textbf{Oracle}.
+\item \textbf{JSP} and \textbf{Servlet} were for request.
+\item \textbf{Apache Tomcat} was used as web container.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Video Library Management System}\\
+\location{Mar 2019 – April 2019 | Guided Individual Project}
+\begin{tightemize}
+\item Used \textbf{C#} and \textbf{.Net} for creating project.
+\item Interface for the library management was designed in \textbf{Visual Studio }. 
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Accomplishments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications} 
+\sectionsep
+\subsection{Problem Solving Through Programming in C}
+-by NPTEL\\
+\location{May 2018}
+\sectionsep
+
+\sectionsep
+\subsection{What is Data Science?}
+-by Coursera (IBM)\\
+\location{Sept 2020}
+\sectionsep
+
+\sectionsep
+\subsection{Tools for Data Science}
+-by Coursera (IBM)\\
+\location{Sept 2020}
+\sectionsep
+
+
+\sectionsep
+\subsection{Data Science Methodology}
+-by Coursera (IBM)\\
+\location{Sept 2020}
+\sectionsep
+
+\sectionsep
+\subsection{Python for Data Science and AI}
+-by Coursera (IBM)\\
+\location{Sept 2020}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
