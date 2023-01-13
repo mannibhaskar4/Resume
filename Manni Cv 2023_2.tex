@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Manni Bhaskar}{Mallik}{ \urlstyle{same}\href{https://www.linkedin.com/in/manni-bhaskar-mallik/}{linkedin.com/in/manni-bhaskar-mallik/}\\
+\href{mailto:mannibhaskar4@gmail.com}{mannibhaskar4@gmail.com} | \href{tel:8102087043}{+91 81020-87043}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Java \textbullet{} JavaScript \textbullet{} Yaml \textbullet{} C
+
+
+
+
+\subsection{Tools}
+Git \textbullet{} GitLab \textbullet{} Spring Boot  \\ \textbullet{} IntelliJ IDEA \textbullet{} VSCode  \textbullet{} Datacap \\ \textbullet{} SoapUI \textbullet{}  Swagger UI \textbullet{}  Tectia Client
+\sectionsep
+
+\subsection{Data Stores}
+Oracle  
+\sectionsep
+
+\subsection{Platforms}
+Linux  
+\sectionsep
+
+\subsection{Soft Skills}
+ Adaptability \textbullet{} Problem-solving
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn://  \href{https://www.linkedin.com/in/manni-bhaskar-mallik/}{\bf manni-bhaskar-mallik} \\
+GitHub://  \href{https://github.com/mannibhaskar4}{\bf mannibhaskar4} \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BGI - SDET}
+\descript{B. Tech in Computer Science \\ and Engineering}
+\location{July 2021 | West Bengal, India}
+\location{ DGPA: 8.67 / 10.0 }
+\sectionsep
+
+\subsection{St. Karen's Secondary School}
+\descript{Senior School Certificate Examination \\ 12th PCM}
+\location{May 2017 | Patna, Bihar}
+\location{ Percentage: 58.40 / 100 }
+\sectionsep
+
+\subsection{St. Xavier's High School}
+\descript{Indian Certificate of Secondary Education Examination (Class- X)  }
+\location{May 2015 | Patna, Bihar}
+\location{ Percentage: 83.33 / 100 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Accenture}
+\descript{| Associate Software Engineer }
+\location{September 2021 - Present | Bengaluru, Karnataka, IN}
+\sectionsep
+\begin{tightemize}
+\item Technologies Utilized: 
+\\\textbf{Gitlab}, \textbf{Intellij IDEA}, \textbf{Maven}, \textbf{Spring Boot}, \textbf{Yaml}, \\ \textbf{Datacap}, \textbf{Tectia}, \textbf{Swagger}, \textbf{SoapUi},
+\textbf{Jetty}, \textbf{JUint}, \\ 
+\textbf{TeamCity}, \textbf{BitBucket}, \textbf{C Sharp}
+
+\item Supported on \textbf{Teamcity to Gitlab Migration} related to deployment
+\item Created an Endpoint for checking application running status
+\item Migrated database to \textbf{Oracle 12 to 19}
+\item Worked on \textbf{Datacap OCR} for scanning Governmental Forms 
+\item Supported upgrade of internal libraies  
+\item Added new \textbf{Spring Boot API} call for an application
+\item Increased code coverage for Spring Boot using \textbf{Junit} and other \\testing classes
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Teams
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teams Worked With} 
+
+\subsection{Devops}
+\location{Sept 2021-March 2022}
+\sectionsep
+\begin{tightemize}
+\item Worked and supported \textbf{Teamcity to Gitlab migration}
+\item Worked and supported \textbf{Oracle 12 to 19 upgrade}
+\end{tightemize}
+\sectionsep
+
+\subsection{OCR}
+\location{April 2022-November 2022}
+\sectionsep
+\begin{tightemize}
+\item Captured text using \textbf{IBM Datacap Studio} in new form
+\item Provided bug fixes on existing form 
+\end{tightemize}
+\sectionsep
+
+\subsection{Backend}
+\location{November 2022-Present}
+\sectionsep
+\begin{tightemize}
+\item Created a new \textbf{API} relate to \textbf{Spring Boot Application}
+\item Provided support on Internal Library Upgrade 
+\end{tightemize}
+\sectionsep
+
+\subsection{Testing}
+\location{November 2022-Present}
+\sectionsep
+\begin{tightemize}
+\item Code Coverage incremented using \textbf{JUnit} for \textbf{Spring Boot Application}
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Employee Management System}\\
+\location{August 2021 | College Project}
+\sectionsep
+\begin{tightemize}
+\item Used \textbf{Spring Boot} and \textbf{maven} for backend.
+\item Used \textbf{React} for front-end. 
+\end{tightemize}
+\sectionsep
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Accomplishments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certifications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Certifications} 
+% \sectionsep
+
+% \sectionsep
+% \subsection{Tools for Data Science}
+% \href{https://www.coursera.org/verify/AAQJRPAWZFLK}{coursera.org/verify/AAQJRPAWZFLK}\\
+% \location{Sept 2020}
+% \sectionsep
+
+
+
+
+% \sectionsep
+% \subsection{Python for Data Science and AI}
+% \href{https://www.coursera.org/verify/69CAX92V3KP5}{coursera.org/verify/69CAX92V3KP5}\\
+% \location{Sept 2020}
+% \sectionsep
+
+\end{minipage} 
+\end{document}  
+\documentclass[]{article}
